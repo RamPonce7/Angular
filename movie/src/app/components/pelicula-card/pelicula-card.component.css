@@ -1,0 +1,28 @@
+.rating {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: flex;
+  }
+  
+  .portada {
+    height: 150px;
+    
+    background-size: cover !important;
+  }
+  
+  .date{
+      float: right;
+      color: grey;
+      font-size: 12px;
+  }
+  
+  .top-back{
+      width: 100%;
+      height: 34px;
+      background: linear-gradient(black, transparent);
+  }
+  
+  .card{
+      cursor: pointer;
+  }
