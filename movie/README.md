@@ -12,9 +12,29 @@ API themoviedb
 ![alt text](https://github.com/RamPonce7/Angular/blob/master/imgs_projects/movies_home.PNG)
 
 
-## Development server
+## Service for API HTTP
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `consumer.service.ts` using Promise 
+
+```typescript
+getApi(url: string, extra = ''): Promise<object> {
+    this.loaderService.activateLoader.next(true);
+    return new Promise((resolve, reject) => {
+      this.httpClient.get(url, this.httpOptions).subscribe(
+        (data) => {
+          this.loaderService.activateLoader.next(false);
+          resolve(data['results']);
+        },
+        (error) => {
+          this.loaderService.activateLoader.next(false);
+          this.errorHandler(error);
+          reject(error);
+        }
+      );
+    });
+  }
+
+```
 
 ## Code scaffolding
 
