@@ -14,10 +14,10 @@ API themoviedb
 
 ## Service for API HTTP
 
-Run `consumer.service.ts` using Promise 
+Only one service `consumer.service.ts` for API requests using Promise 
 
 ```typescript
-getApi(url: string, extra = ''): Promise<object> {
+getApi(url: string): Promise<object> {
     this.loaderService.activateLoader.next(true);
     return new Promise((resolve, reject) => {
       this.httpClient.get(url, this.httpOptions).subscribe(
