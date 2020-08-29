@@ -11,14 +11,23 @@ API themoviedb
 This project was bulding in 8hrs with:
 
 ```
-Route
 HttpClient
 Promise
 RxJS
 @Input
 Modals
 Material Design
+*ngXXX
+```
 
+I know more things like:
+
+```
+Route
+Guard
+Input Fields
+Sockets
+and more...
 ```
 
 
