@@ -35,6 +35,16 @@ getApi(url: string): Promise<object> {
   }
 
 ```
+![alt text](https://github.com/RamPonce7/Angular/blob/master/imgs_projects/movies_detail.PNG)
+
+
+![alt text](https://github.com/RamPonce7/Angular/blob/master/imgs_projects/movies_loader.PNG)
+
+
+
+
+
+
 
 ## Code scaffolding
 
