@@ -38,7 +38,7 @@ getApi(url: string): Promise<object> {
 
 ## @Inputs
 
-Sending movie object with @Input 
+Sending movie object with @Input `pelicula-card.component`
 
 ```typescript
 export class PeliculaCardComponent implements OnInit {
@@ -59,19 +59,15 @@ export class PeliculaCardComponent implements OnInit {
 
 ```html
 
-<div class="card z-depth-2 waves-light" (click)="openModal()">
-    <div
-      class="w100 portada" style="background: url(https://image.tmdb.org/t/p/w500/{{pelicula.poster_path}});"
-    >
-    <div class="top-back">
-
-    </div>
-      <span class="white-text rating">{{pelicula.vote_average}} <i class="material-icons amber-text">star</i></span>
-    </div>
-
-
+<div class="row">
+  <div class="col s12 m3 l2" *ngFor="let pelicula of peliculas">
+    <app-pelicula-card [pelicula] = pelicula></app-pelicula-card>
   </div>
 
+  <div class="col s12 center">
+    <button (click)="loadData()" class="btn-large">Cargar más</button>
+  </div>
+</div>
 
 ```
 
