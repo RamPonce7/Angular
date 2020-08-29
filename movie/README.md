@@ -1,9 +1,9 @@
-# Movie
+# Movie by RamPonce7
 
-Movie project
+For this project i used: 
 
 ```
-Angular 8
+Angular 7+
 Meterializecss
 API themoviedb
 ```
