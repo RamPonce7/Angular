@@ -1,0 +1,13 @@
+.loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000000a8;
+    z-index: 1;
+}
+
+.preloader-wrapper{
+    position: absolute;
+    top: calc(50% - 32px);
+    right: calc(50% - 32px);
+}

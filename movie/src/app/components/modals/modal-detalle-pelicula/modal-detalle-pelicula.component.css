@@ -1,0 +1,55 @@
+.modal-detalle-pelicula {
+  max-width: 480px;
+  max-height: 85%;
+  top: 20px;
+}
+
+.head {
+  position: absolute;
+  width: 480px;
+  height: 40px;
+  top: 0;
+  z-index: 1005;
+}
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #ffffff2b;
+  border-radius: 50px;
+  padding: 3px;
+}
+
+.portada {
+  background-size: cover !important;
+  width: 100%;
+  height: 270px;
+}
+
+p {
+  margin: 0;
+}
+
+.btn-floating {
+    position: absolute;
+    top: 250px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.title{
+    background: linear-gradient(#00000000, #00000078);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    padding: 5px;
+
+}
+
+
+.btn-floating i{
+    line-height: 40px;
+}
