@@ -8,6 +8,19 @@ Meterializecss
 API themoviedb
 ```
 
+This project was bulding in 8hrs with:
+
+```
+Route
+HttpClient
+Promise
+RxJS
+@Input
+Modals
+Material Design
+
+```
+
 
 ![alt text](https://github.com/RamPonce7/Angular/blob/master/imgs_projects/movies_home.PNG)
 
