@@ -35,6 +35,51 @@ getApi(url: string): Promise<object> {
   }
 
 ```
+
+## @Inputs
+
+Sending movie object with @Input 
+
+```typescript
+export class PeliculaCardComponent implements OnInit {
+  @Input() pelicula: IPelicula;
+
+  constructor(
+    private modalDetallePeliculaService: ModalDetallePeliculaService
+  ) {}
+
+  ngOnInit(): void {}
+
+  openModal() {
+    this.modalDetallePeliculaService.peliculaSelected.next(this.pelicula);
+  }
+}
+
+```
+
+```html
+
+<div class="card z-depth-2 waves-light" (click)="openModal()">
+    <div
+      class="w100 portada" style="background: url(https://image.tmdb.org/t/p/w500/{{pelicula.poster_path}});"
+    >
+    <div class="top-back">
+
+    </div>
+      <span class="white-text rating">{{pelicula.vote_average}} <i class="material-icons amber-text">star</i></span>
+    </div>
+
+
+  </div>
+
+
+```
+
+
+![alt text](https://github.com/RamPonce7/Angular/blob/master/imgs_projects/movies_card.PNG)
+
+
+
 ![alt text](https://github.com/RamPonce7/Angular/blob/master/imgs_projects/movies_detail.PNG)
 
 
