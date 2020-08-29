@@ -2,11 +2,11 @@
 
 Movie project
 
-´´´
+```
 Angular 8
 Meterializecss
 API themoviedb
-´´´
+```
 
 
 ![alt text](https://github.com/RamPonce7/Angular/blob/master/imgs_projects/movies_home.PNG)
