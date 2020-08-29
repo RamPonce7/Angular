@@ -100,7 +100,9 @@ export class PeliculaCardComponent implements OnInit {
 
 
 
-## RxJS for send Movie Object to Modal `pelicula-card.component`
+## RxJS for send Movie Object to Modal 
+
+`pelicula-card.component`
 to `modal-detalle-pelicula.component`
 
 Using Service `ModalDetallePeliculaService `
@@ -120,7 +122,6 @@ openModal() {
 ```
 this.modalDetallePeliculaService.peliculaSelected.subscribe(
       (pelicula: IPelicula) => {
-        this.pelicula = null;
         this.pelicula = pelicula;
         this.M.openModal('modal-detalle-pelicula');
       }
